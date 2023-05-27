@@ -1,6 +1,6 @@
 #include "../include/tables.h"
 
-size_t myHash::getHash(const string& s) 
+size_t myHash::getHash(const K& s) 
 {
 	size_t size = _buffer.size();
 	const char* v = s.c_str();

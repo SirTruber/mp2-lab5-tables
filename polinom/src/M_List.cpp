@@ -143,14 +143,7 @@ void contSwitch(bool& cont)
     }
 };
 
-void ignoreLine()
-{
-    std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    std::cout << "Input error." << std::endl;;
-};
-
-void set()
+void polinom::set()
 {
     int tmp;
     bool cont = true;
@@ -203,7 +196,7 @@ void set()
             continue;
         }
 
-        p.push(monom{ a,xyz });
+        push(monom{ a,xyz });
         contSwitch(cont);
     }
     butifie();

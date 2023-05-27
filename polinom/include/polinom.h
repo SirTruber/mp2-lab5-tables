@@ -1,4 +1,5 @@
 ﻿#pragma once
+
 #include <iostream>
 
 // Контейнер monom обеспечивает хранение монома
@@ -189,4 +190,11 @@ public:
 
     //\brief Процедура приведения подобных
     void butifie();
+};
+
+void ignoreLine()
+{
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cout << "Input error." << std::endl;;
 };
